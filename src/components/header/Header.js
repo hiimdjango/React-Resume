@@ -7,7 +7,7 @@ const header = ( props ) => (
         <header id="home">
             <nav id="nav-wrap">
                 <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-                <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                <a className="mobile-btn" href="" title="Hide navigation">Hide navigation</a>
                 <ul id="nav" className="nav">
                     <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
                     <li><a className="smoothscroll" href="#about">About</a></li>
@@ -18,16 +18,16 @@ const header = ( props ) => (
             </nav> {/* end #nav-wrap */}
             <div className="row banner">
                 <div className="banner-text">
-                    <h1 className="responsive-headline">Hello World.</h1>
+                    <h1 className="responsive-headline">Hello World</h1>
                     <h1 style={{fontSize:'3rem'}}>I'm {props.data.name}.</h1>
-                    <h3>I'm a Montreal based <span>{props.data.roles.role1}</span> and <span>{props.data.roles.role2}</span>. Let's <a className="smoothscroll" href="#about">start scrolling </a>
+                    <h3>I'm a {props.data.location} based <span>{props.data.roles.role1}</span> and <span>{props.data.roles.role2}</span>. Let's <a className="smoothscroll" href="#about">start scrolling </a>
                     and learn more <a className="smoothscroll" href="#about"> about me</a>.</h3>
                     <hr />
                     <ul className="social">
-                        <li><a href={props.data.socialMedia.facebook}><i className="fa fa-facebook" /></a></li>
-                        <li><a href={props.data.socialMedia.linkedIn}><i className="fa fa-linkedin" /></a></li>
-                        <li><a href={props.data.socialMedia.instagram}><i className="fa fa-instagram" /></a></li>
-                        <li><a href={props.data.socialMedia.gitHub}><i className="fa fa-github" /></a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" href={props.data.socialMedia.facebook}><i className="fa fa-facebook" /></a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" href={props.data.socialMedia.linkedIn}><i className="fa fa-linkedin" /></a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" href={props.data.socialMedia.instagram}><i className="fa fa-instagram" /></a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" href={props.data.socialMedia.gitHub}><i className="fa fa-github" /></a></li>
                     </ul>
                 </div>
             </div>

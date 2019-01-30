@@ -3,7 +3,7 @@ import React from 'react';
 const skills = ( props ) => {
     
     const skillList = props.skills.map((item,index) => {
-        return <li><span style={{width:item.percentage}} className="bar-expand skill " /><em>{item.name}</em></li>
+        return <li key={index}><span style={{width:item.percentage}} className="bar-expand skill " /><em>{item.name}</em></li>
     });
 
     return(
@@ -14,7 +14,7 @@ const skills = ( props ) => {
             </div>
             <div className="nine columns main-col">
                 <p>I Could do a long detailled list with every skill or technology I master but it's going to be very long! You can still see
-                    the detailled one on my CV but here's the {props.skills.length} major skill I have.
+                    the detailed one on my downloadable Resume but here's the {props.skills.length} major {props.skills.length > 1 ? <span>skills</span> : <span>skill</span>} I have.
                 </p>
                 <div className="bars">
                     <ul className="skills">
