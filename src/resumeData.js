@@ -30,6 +30,15 @@ let resumeData = {
         description:'Developing user Interfaces mostly with React.js, working with CSS3/HTML5/JavaScript, jQuery sometimes. I used some technologies like REST, Firebase, mySQL, Webpack, Redux, Bootstrap, Reactstreap..'},
         {company:'Cordonnerie du Village',role:'IT Project',date:'2017 - 2018',
         description:'Developing a Web Application in a small team for business in Montreal, mostly Html/CSS/JavScript/Java Spring MVC, also creating a relational database. Unfortunately the app has never been completed due to trust and money issues with business owner.'},
+    ],
+    skills: [
+        {name:'Front-End Development',percentage:'80%'},
+        {name:'Motivation',percentage:'100%'},
+        {name:'Agile Development',percentage:'80%'},
+        {name:'Teamwork',percentage:'100%'},
+        {name:'Object Oriented Programming',percentage:"65%"},
+        {name:'Fast Learning',percentage:"100%"},
+
     ]
 };
 
